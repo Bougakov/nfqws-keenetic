@@ -79,7 +79,7 @@ check_old_config_func() {
 install_packages_func() {
   opkg update
   opkg upgrade busybox
-  opkg install iptables
+  opkg install iptables coreutils-nohup
 }
 
 config_copy_files_func() {

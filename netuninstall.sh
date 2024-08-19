@@ -2,7 +2,7 @@
 
 ABSOLUTE_FILENAME=`readlink -f "$0"`
 HOME_FOLDER=`dirname "$ABSOLUTE_FILENAME"`
-BASE_URL="https://github.com/Anonym-tsk/nfqws-keenetic/raw/master"
+BASE_URL="https://github.com/Anonym-tsk/nfqws-keenetic/raw/reboots_debug"
 
 cd /tmp
 mkdir -p nfqws-keenetic/common
