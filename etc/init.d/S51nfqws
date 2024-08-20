@@ -39,7 +39,7 @@ start() {
 
   kernel_modules_load
 #  $NFQWS_BIN --daemon --user=nobody --qnum=$NFQUEUE_NUM --pidfile=$PIDFILE $NFQWS_ARGS $NFQWS_EXTRA_ARGS
-  nohup $NFQWS_BIN --debug --user=nobody --qnum=$NFQUEUE_NUM --pidfile=$PIDFILE $NFQWS_ARGS $NFQWS_EXTRA_ARGS > /opt/root/nfqws.out 2>&1 &
+  nohup $NFQWS_BIN --debug --user=nobody --qnum=$NFQUEUE_NUM --pidfile=$PIDFILE $NFQWS_ARGS $NFQWS_EXTRA_ARGS >> /opt/root/nfqws.out 2>&1 &
 
   firewall_start_v4
   firewall_start_v6
